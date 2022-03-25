@@ -1,3 +1,5 @@
-public class Account extends Library{
+public class Account {
 
+  
+  
 }

@@ -8,7 +8,7 @@ public class Library {
     this.account = account;
   }
   
-  public void waitlist(Account a, book b) {
+  public void waitlist(Account a, Book b) {
     
 
 }

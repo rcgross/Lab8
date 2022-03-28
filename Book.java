@@ -53,6 +53,12 @@ public class Book {
     public String getTitle() {
             return title;
     }
+    
+    public void bookInfo() {
+        
+        System.out.println("Book ID: " + bookID + "\n" + "Book RackNumber: " + RackNumber+ "\n" + "Book Title: " + title + "\n" + "Book Author: " + author + "\n")
+        
+    }
 
     // constructor for a book, since each book has an ID number as well as a Rack Number
     public Book (int bookID, String author, String title, int RackNumber, boolean available) {

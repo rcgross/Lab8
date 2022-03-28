@@ -6,9 +6,8 @@ public class Book {
     private boolean available = true; // this will indicate if a book is available, set to true if the book is available
                                         // for the library class if it is not available then put on waitlist in main class
                                         // if it is available then member can check out the book
-    private String author; // author of book
-    private String title; // title of book
-    private ArrayList<Integer> waitList;
+ 
+    private ArrayList<Integer> waitList; // creates a list for the waitlist 
     
     // All the setter and getters for the instance variables
     public void setAvailable(boolean available)
@@ -54,17 +53,11 @@ public class Book {
             return title;
     }
     
-    public void bookInfo() {
-        
-        System.out.println("Book ID: " + bookID + "\n" + "Book RackNumber: " + RackNumber+ "\n" + "Book Title: " + title + "\n" + "Book Author: " + author + "\n")
-        
-    }
+ 
 
     // constructor for a book, since each book has an ID number as well as a Rack Number
-    public Book (int bookID, String author, String title, int RackNumber, boolean available) {
+    public Book (int bookID, int RackNumber, boolean available) {
         this.BookID = BookID;
-        this.author = author;
-        this.title = title;
         this.RackNumber = RackNumber;
         this.available = available;
         waitList = new ArrayList<>();

@@ -10,11 +10,11 @@ public class Librarian extends Account{
 		this.library = library;
 	}
 	
-	public void addBook (Book b) { //add a book to the library
-		library.getLOB().add(b);
+	public void addBook (Book b) { //add a book to the library FROM A MEMBER
+		library.addwaitList(b);
 	}
 	
-	public void removeBook (Book b) { //remove a book from the library
+	public void removeBook (Book b) { //remove a book from the library AFTER MEMBER CHECKS OUT
 		for (int i = 0; i < library.getLOB().size(); i++) {
 			if (library.getLOB().get(i) == b) {
 				library.getLOB().remove(i);

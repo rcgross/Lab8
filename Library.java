@@ -8,11 +8,16 @@ public class Library {
     this.account = account;
   }
   
-  public void waitlist(Account a, Book b) {
-    
+  public static void main(String[] args) {
+    Member mem1 = new Member("Harriet", 4);
+    Book book1 = new Book(3, 34, false);
+    Member mem2 = new Member("j", 2);
 
-}
-  
-  public void checkout(Account a, Book b) {
-  }  
+    mem1.checkout(book1);
+    mem2.checkout(book1);
+
+    System.out.println("The wait list includes members: " + book1.getWaitList());
+    System.out.println("You are in place " + mem2.waitListStatus(book1) + " on the wait list");
+
+  } 
 }
